@@ -7,6 +7,8 @@ public class Checkpoint_02_05 {
 			int k = 7;
 			int i = k + 2;
 			System.out.println(i);
+			
+			
 		}
 	}
 }
