@@ -7,8 +7,8 @@ public class Exercise_14 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		final double pound = 0.45359237;
-		 double inch = 0.0254;
+		final double POUND = 0.45359237;
+		final double INCH = 0.0254;
 		
 		
 		System.out.println("Enter weight in pounds:");
@@ -20,7 +20,7 @@ public class Exercise_14 {
 		
 		
 		
-		double bmi = (weight * pound) / Math.pow(height *inch , 2) ;
+		double bmi = (weight * POUND) / (Math.pow(height *INCH , 2)) ;
 		
 		System.out.println("BMI is " + (int)(bmi * 10000)/10000.0);
 	}

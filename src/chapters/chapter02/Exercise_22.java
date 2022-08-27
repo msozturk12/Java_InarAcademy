@@ -25,7 +25,7 @@ public class Exercise_22 {
 		remainingAmount = remainingAmount % 10;
 
 		int numberOfNickels = remainingAmount / 5;
-		remainingAmount = remainingAmount / 5;
+		remainingAmount = remainingAmount  % 5;
 
 		int numberOfPennies = remainingAmount;
 

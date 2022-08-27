@@ -11,7 +11,7 @@ public class Exercise13 {
 		double f = 5.9;
 
 		double x = (e * d - b * f) / (a * d - b * c);
-		double y = (a * f - a * c) / (a * d - b * c);
+		double y = (a * f - a * c) / (e * d - b * c);
 
 		System.out.println("x = " + x + " y = " + y);
 	}
