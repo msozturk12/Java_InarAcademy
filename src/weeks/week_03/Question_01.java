@@ -18,7 +18,7 @@ public class Question_01 {
 			double bonus = salary * (0.05);
 			salary += bonus;
 		
-			System.out.println (" your bonus :" +bonus) ;
+			System.out.println (" Your bonus :" +bonus) ;
 		}
 		System.out.println("Your salary: " + salary );
 		
