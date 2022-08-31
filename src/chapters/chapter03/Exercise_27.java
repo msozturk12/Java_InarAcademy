@@ -12,7 +12,7 @@ public class Exercise_27 {
 		double x = input.nextDouble();
 		double y = input.nextDouble();
 
-		if (((y > 0) && (x > 0) && (x + 2 * y < 200)))
+		if ((x == 0 && y <= 100) || (y == 0 && x <= 200) || (x <= 200 && y <= 100 && y / x < 0.5))
 			System.out.println("The point is in the triangle");
 		else
 			System.out.println("The point is not in the triangle");

@@ -9,23 +9,23 @@ public class Exercise_09 {
 		System.out.println("Enter the first 9 digits of an ISBN as integer:");
 		int ısbn = input.nextInt();
 
-		int digit1 = ısbn / 100000000;
-		int remainingDigit = ısbn % 100000000;
+		int digit1 = ısbn / 100_000_000;
+		int remainingDigit = ısbn % 100_000_000;
 
-		int digit2 = remainingDigit / 10000000;
+		int digit2 = remainingDigit / 10_000_000;
 		remainingDigit %= 10000000;
 
-		int digit3 = remainingDigit / 1000000;
-		remainingDigit %= 1000000;
+		int digit3 = remainingDigit / 1_000_000;
+		remainingDigit %= 1_000_000;
 
-		int digit4 = remainingDigit / 100000;
-		remainingDigit %= 100000;
+		int digit4 = remainingDigit / 100_000;
+		remainingDigit %= 100_000;
 
-		int digit5 = remainingDigit / 10000;
-		remainingDigit %= 10000;
+		int digit5 = remainingDigit / 10_000;
+		remainingDigit %= 10_000;
 
-		int digit6 = remainingDigit / 1000;
-		remainingDigit %= 1000;
+		int digit6 = remainingDigit / 1_000;
+		remainingDigit %= 1_000;
 
 		int digit7 = remainingDigit / 100;
 		remainingDigit %= 100;

@@ -16,10 +16,18 @@ public class Exercise_29 {
 		double y2 = input.nextDouble();
 		double radius2 = input.nextDouble();
 
-		if (Math.pow(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2), 0.5) + radius2 < radius1)
+		double distanceToCenter = Math.pow(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2), 0.5);
+
+		if ((radius1 - radius2) < 0) {
+			double temp = radius1;
+			radius1 = radius2;
+			radius2 = temp;
+		}
+
+		if (radius1 - radius2 >= distanceToCenter)
 			System.out.println("circle2 is inside circle1");
-		
-		else if (Math.pow(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2), 0.5) < radius1 + radius2)
+
+		else if (radius1 + radius2 <= distanceToCenter)
 			System.out.println("circle2 overlaps circle1");
 		else
 			System.out.println("circle2 does not overlap circle1");

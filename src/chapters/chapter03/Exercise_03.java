@@ -20,10 +20,11 @@ public class Exercise_03 {
 		if (a * d - b * c == 0) {
 			System.out.println("The equation has no solution ");
 		}
-		
+
 		else {
-			System.out.println("x = " + (e * d - b * f) / (a * d - b * c));
-			System.out.println("y = " + (a * f - e * c) / (a * d - b * c));
+			double x = (e * d - b * f) / (a * d - b * c);
+			double y = (a * f - e * c) / (a * d - b * c);
+			System.out.println("x is " + x + " and y is " + y);
 
 		}
 	}

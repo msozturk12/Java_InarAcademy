@@ -12,7 +12,6 @@ public class Question_03 {
 		System.out.print(number % 10);
 		System.out.print((number / 10) % 10);
 		System.out.print((number / 100) % 10);
-		System.out.print((number / 1000) % 10);
-
+		System.out.print(number / 1000);
 	}
 }

@@ -27,13 +27,13 @@ public class Exercise_07 {
 
 		int numberOfPennies = remainingAmount;
 
-		System.out.println("Your amount " + amount + " consists of");
+		System.out.println("Your amount " + amount + " consists of ");
 
-		System.out.println(" " + numberOfOneDollars + ((numberOfOneDollars > 1) ? " dollars" : " dollar"));
-		System.out.println(" " + numberOfQuarters + ((numberOfQuarters > 1) ? " quarters " : " quarter "));
-		System.out.println(" " + numberOfDimes + ((numberOfDimes > 1) ? " dimes " : "  dime"));
-		System.out.println(" " + numberOfNickels + ((numberOfNickels > 1) ? " nickels " : "  nickel"));
-		System.out.println(" " + numberOfPennies + ((numberOfPennies > 1 ? " pennies " : "  penny")));
+		System.out.println( numberOfOneDollars + ((numberOfOneDollars > 1) ? " dollars" : " dollar"));
+		System.out.println( numberOfQuarters + ((numberOfQuarters > 1) ? " quarters " : " quarter "));
+		System.out.println( numberOfDimes + ((numberOfDimes > 1) ? " dimes " : "  dime"));
+		System.out.println( numberOfNickels + ((numberOfNickels > 1) ? " nickels " : "  nickel"));
+		System.out.println( numberOfPennies + ((numberOfPennies > 1 ? " pennies " : "  penny")));
 
 	}
 

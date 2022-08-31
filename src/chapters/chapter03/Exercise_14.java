@@ -14,8 +14,10 @@ public class Exercise_14 {
 
 		if (guess > 1 || guess < 0) {
 			System.out.println("Wrong input please enter 0 or 1");
+			
 		} else if (number == guess) {
 			System.out.println("your guess is correct :)");
+			
 		} else {
 			System.out.println("guess is wrong");
 

@@ -6,9 +6,9 @@ public class Exercise_13 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		System.out
-				.print("0: compute tax for single filers \n" + "1: compute tax for married jointly or qualifying widow(er) \n"
-						+ "2: compute tax for married filing separately; \n" + "3: compute tax for head of household; \n");
+		System.out.print("0: compute tax for single filers \n"
+				+ "1: compute tax for married jointly or qualifying widow(er) \n"
+				+ "2: compute tax for married filing separately; \n" + "3: compute tax for head of household; \n");
 
 		System.out.println("Please Enter the filling status");
 		int status = input.nextInt();
@@ -17,7 +17,7 @@ public class Exercise_13 {
 		double income = input.nextDouble();
 		double tax = 0;
 
-		if (status == 0) {
+		if (status == 0) {    //for single filers
 			if (income <= 8350)
 				tax = income * 0.10;
 			else if (income <= 33950)
@@ -32,8 +32,9 @@ public class Exercise_13 {
 			else
 				tax = 8350 * 0.10 + (33950 - 8350) * 0.15 + (82250 - 33950) * 0.25 + (171550 - 82250) * 0.28
 						+ (372950 - 171550) * 0.33 + (income - 372950) * 0.35;
-
-		} else if (status == 1) {
+			System.out.println(tax);
+			
+		} else if (status == 1) { //compute tax for married jointly or qualifying widow(er)
 			if (income <= 16700)
 				tax = income * 0.10;
 			else if (income <= 67900)
@@ -48,8 +49,9 @@ public class Exercise_13 {
 			else
 				tax = 16700 * 0.10 + (67900 - 16700) * 0.15 + (137050 - 67900) * 0.25 + (208850 - 137051) * 0.28
 						+ (372950 - 208851) * 0.33 + (income - 372950) * 0.35;
-
-		} else if (status == 2) {
+			System.out.println(tax);
+			
+		} else if (status == 2) { //compute tax for married filing separately
 			if (income <= 8350)
 				tax = income * 0.10;
 			else if (income <= 33950)
@@ -64,8 +66,9 @@ public class Exercise_13 {
 			else
 				tax = 8350 * 0.10 + (33950 - 8350) * 0.15 + (68525 - 33950) * 0.25 + (104425 - 68525) * 0.28
 						+ (186475 - 104425) * 0.33 + (income - 186475) * 0.35;
+			System.out.println(tax);
 
-		} else if (status == 3) {
+		} else if (status == 3) { //compute tax for head of household
 			if (income <= 11950)
 				tax = income * 0.10;
 			else if (income <= 45500)
@@ -80,7 +83,7 @@ public class Exercise_13 {
 			else
 				tax = 11950 * 0.10 + (45500 - 11950) * 0.15 + (117450 - 45500) * 0.25 + (190201 - 117450) * 0.28
 						+ (372950 - 190200) * 0.33 + (income - 372951) * 0.35;
-
+				System.out.println(tax);
 		} else {
 			System.out.println("Error: invalid status");
 			System.exit(1);
