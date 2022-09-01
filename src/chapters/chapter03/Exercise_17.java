@@ -13,7 +13,7 @@ public class Exercise_17 {
 		int yourSelection = input.nextInt();
 
 		if (pc == 0)
-			System.out.println("The compute is scissor.");
+			System.out.println("The computer is scissor.");
 		else if (pc == 1)
 			System.out.println("The computer is rock.");
 		else

@@ -13,8 +13,8 @@ public class Exercise_20 {
 		System.out.println("Enter the wind speed (>=2) in miles per hour:");
 		double windSpeed = input.nextDouble();
 		double windChill;
-		
-		if (temperature < -58 || temperature > 41 && windSpeed < 2) {
+
+		if (temperature < -58 || temperature < 41 && windSpeed >= 2) {
 			System.out.println("Temperature value is not valid");
 		} else if (windSpeed < 2)
 			System.out.println("Windspeed value is not valid");
@@ -24,6 +24,5 @@ public class Exercise_20 {
 
 			System.out.println("The wind chill index is " + windChill);
 		}
-
 	}
 }

@@ -19,10 +19,12 @@ public class Exercise_25 {
 		double x4 = input.nextDouble();
 		double y4 = input.nextDouble();
 		
-		if ((y1 - y2) * (x4 - x3) - (x2 - x1) * (y4 - y3) == 0 ) 
+		if ((y1 - y2) * (x4 - x3) - (x2 - x1) * (y4 - y3) == 0 ) //ad - bc
 			System.out.println("The two lines are parallel");
 		
-		
+		else {
+			
+		}
 		
 	}
 

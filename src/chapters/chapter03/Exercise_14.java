@@ -7,7 +7,7 @@ public class Exercise_14 {
 		
 		Scanner input = new Scanner(System.in);
 
-		int number = ((int) (Math.random() * 10) % 2);
+		int number = ((int) (Math.random() * 2) );
 
 		System.out.println("Enter your guess 0 for heads , 1 for tails");
 		int guess = input.nextInt();

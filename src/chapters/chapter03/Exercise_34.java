@@ -23,7 +23,6 @@ public class Exercise_34 {
 			System.out.println("(" + x2 + "," + y2 + ") is on the  line segment from (" + x0 + "," + y0 + " ) to (" + x1
 					+ "," + y1 + ")");
 
-		// can't do it yet
 
 	}
 }

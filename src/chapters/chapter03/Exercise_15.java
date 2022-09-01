@@ -13,12 +13,12 @@ public class Exercise_15 {
 		int guess = input.nextInt();
 
 		int lotteryDigit1 = lottery / 100;
-		int lotteryDigit2 = lottery % 10;
-		int lotteryDigit3 = (lottery / 10) % 10;
+		int lotteryDigit2 = (lottery / 10 ) % 10;
+		int lotteryDigit3 = (lottery % 10);
 
-		int guessDigit1 = guess / 10;
-		int guessDigit2 = guess % 10;
-		int guessDigit3 = (guess / 10) % 10;
+		int guessDigit1 = guess / 100;
+		int guessDigit2 = (guess / 10) % 10;
+		int guessDigit3 = (guess % 10);
 
 		System.out.println("The lottery number is " + lottery);
 

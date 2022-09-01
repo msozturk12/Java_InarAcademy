@@ -13,7 +13,7 @@ public class Exercise_07 {
 
 		int remainingAmount = (int) (amount * 100);
 
-		int numberOfOneDollars = remainingAmount / 100;
+		int numberOfOneHunderedDollars = remainingAmount / 100;
 		remainingAmount = remainingAmount % 100;
 
 		int numberOfQuarters = remainingAmount / 25;
@@ -29,7 +29,7 @@ public class Exercise_07 {
 
 		System.out.println("Your amount " + amount + " consists of ");
 
-		System.out.println( numberOfOneDollars + ((numberOfOneDollars > 1) ? " dollars" : " dollar"));
+		System.out.println( numberOfOneHunderedDollars + ((numberOfOneHunderedDollars > 1) ? " dollars" : " dollar"));
 		System.out.println( numberOfQuarters + ((numberOfQuarters > 1) ? " quarters " : " quarter "));
 		System.out.println( numberOfDimes + ((numberOfDimes > 1) ? " dimes " : "  dime"));
 		System.out.println( numberOfNickels + ((numberOfNickels > 1) ? " nickels " : "  nickel"));

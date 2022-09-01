@@ -14,16 +14,16 @@ public class Exercise_18 {
 			System.out.println("The package cannot be shipped");
 
 		else {
-			if (weight > 0 && weight <= 1)
+			if (0< weight && weight <= 1)
 				System.out.println("Shipping cost is 3.5 dollars");
 
-			else if (weight > 1 && weight <= 3)
+			else if (1 < weight && weight <= 3)
 				System.out.println("Shipping cost is 5.5 dollars");
 
-			else if (weight > 3 && weight <= 10)
+			else if (3 < weight && weight <= 10)
 				System.out.println("Shipping cost is 8.5 dollars");
 
-			else if (weight > 10 && weight <= 20)
+			else if (10 < weight && weight <= 20)
 				System.out.println("Shipping cost is 10.5 dollars");
 			else
 				System.out.println("no info for weight>20");

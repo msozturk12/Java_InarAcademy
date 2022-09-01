@@ -13,11 +13,11 @@ public class Exercise_23 {
 		double x = input.nextDouble();
 		double y = input.nextDouble();
 
-		if (x > 10 / 2 || y > 5 / 2.0)
-			System.out.println("Coordinate " + x + "," + y + " is not in the rectangle");
+		if (x < 10 / 2.0 || y < 5 / 2.0)
+			System.out.println("Coordinate " + x + "," + y + " is in the rectangle");
 
 		else
-			System.out.println("Coordinate " + x + "," + y + " is in the rectangle");
+			System.out.println("Coordinate " + x + "," + y + " is not in the rectangle");
 	}
 
 }
