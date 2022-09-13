@@ -12,6 +12,7 @@ public class Exercise_31 {
 
 		System.out.println("Enter 0 to convert dollars to RMB and 1 vice versa: ");
 		byte convert = input.nextByte();
+		
 		System.out.println((convert < 0 || convert > 1) ? "incorrect input" : "");
 		
 		

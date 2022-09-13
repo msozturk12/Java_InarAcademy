@@ -17,7 +17,7 @@ public class Checkpoint_03_10 {
 			System.out.println("A");
 			else
 			System.out.println("F");
-	}													the code is not in rigth order,for example when you flow the score 90,
+	}													the code is not in right order,for example when you flow the score 90,
 														output should be A ,but instead of A  it shows us D
 }
 */

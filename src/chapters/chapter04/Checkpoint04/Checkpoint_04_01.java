@@ -21,7 +21,6 @@ public class Checkpoint_04_01 {
 		System.out.println(Math.round(2.5f));		      //   3
 		System.out.println(Math.round(2.5));              //   3
 		System.out.println(Math.round(Math.abs(-2.5)));   //   3
-	
 	}
 
 }

@@ -44,7 +44,7 @@ public class Exercise10 {
 				 // Prompt the user to answer questions
 				 System.out.print("Is your birthday in Set1?\n");
 				 System.out.print(set1);
-				 System.out.print("\nEnter 0 for N and 1 for Y : ");
+				 System.out.print("\nEnter No for N and Yes for Y : ");
 				 char answer = input.next().charAt(0);
 				
 				 if (answer == 'Y')
@@ -62,7 +62,7 @@ public class Exercise10 {
 				 // Prompt the user to answer questions
 				 System.out.print("Is your birthday in Set3?\n");
 				 System.out.print(set3);
-				 System.out.print("\nEnter 0 for No and 1 for Yes: ");
+				 System.out.print("\nEnter N for No and 1 for Yes: ");
 				 answer = input.next().charAt(0);
 				
 				 if (answer == 'Y')
@@ -71,7 +71,7 @@ public class Exercise10 {
 				 // Prompt the user to answer questions
 				 System.out.print("\nIs your birthday in Set4?\n");
 				 System.out.print(set4);
-				 System.out.print("\nEnter 0 for No and 1 for Yes: ");
+				 System.out.print("\nEnter N for No and Y for Yes: ");
 				 answer = input.next().charAt(0);
 				
 				 
@@ -81,7 +81,7 @@ public class Exercise10 {
 					  // Prompt the user to answer questions
 					  System.out.print("\nIs your birthday in Set5?\n");
 					  System.out.print(set5);
-					  System.out.print("\nEnter 0 for No and 1 for Yes: ");
+					  System.out.print("\nEnter N for No and Y for Yes: ");
 					  answer = input.next().charAt(0);
 					 
 					  if (answer == 'Y')

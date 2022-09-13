@@ -10,7 +10,7 @@ public class Checkpoint_03_23 {
 
 		System.out.println(x >= 50 && x <= 100);
 		System.out.println(y >= 50 && y <= 100);
-		System.out.println(y >= 50 && y <= 100);
+		System.out.println(z >= 50 && z <= 100);
 
 	}
 }

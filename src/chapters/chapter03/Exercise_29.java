@@ -24,10 +24,10 @@ public class Exercise_29 {
 			radius2 = temp;
 		}
 
-		if (radius1 - radius2 >= distanceToCenter)
+		if (distanceToCenter <= radius1 - radius2 )          //Math.abs(radius1 - radius2)
 			System.out.println("circle2 is inside circle1");
 
-		else if (radius1 + radius2 <= distanceToCenter)
+		else if (distanceToCenter <= radius1 + radius2)
 			System.out.println("circle2 overlaps circle1");
 		else
 			System.out.println("circle2 does not overlap circle1");

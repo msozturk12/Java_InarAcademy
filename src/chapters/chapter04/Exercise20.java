@@ -8,7 +8,7 @@ public class Exercise20 {
 
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a String");
-		String str = input.next();
+		String str = input.nextLine();
 
 		int len = str.length();
 		char first = str.charAt(0);

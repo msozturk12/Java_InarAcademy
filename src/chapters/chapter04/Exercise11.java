@@ -19,7 +19,7 @@ public class Exercise11 {
 			System.out.println("The hex value is " + value);
 		
 		else
-			System.out.println("The hex value is " + (char)(value + 'F' - 15) );
+			System.out.println("The hex value is " + (char)(value +  55) );  // 65 - 70  /'F' - 15=55
 		
 			
 			

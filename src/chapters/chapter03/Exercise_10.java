@@ -17,7 +17,7 @@ public class Exercise_10 {
 		if (number1 + number2 == answer) {
 			System.out.println("well done you are right");
 		} else {
-			System.out.println("Your answer is wrong ");
+			System.out.print("Your answer is wrong ");
 			System.out.println("it should be like that " + number1 + " + " + number2 + " = " + (number1 + number2));
 		}
 	}

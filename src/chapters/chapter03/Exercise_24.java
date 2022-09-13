@@ -7,7 +7,7 @@ public class Exercise_24 {
 		int selection1 = (int) (Math.random() * 13);
 		int selection2 = (int) (Math.random() * 4);
 
-		System.out.println("The card you picked is ");
+		System.out.print("The card you picked is ");
 
 		switch (selection1) {
 		case 0:
