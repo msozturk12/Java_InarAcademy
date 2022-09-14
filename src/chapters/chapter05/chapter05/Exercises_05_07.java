@@ -8,12 +8,13 @@ public class Exercises_05_07 {
 
 		double totalCostOfTenYears=0;
 		double fourYearCost=0;
+		
 		for (int year = 1; year < 15; year++) {
 
 			tuition = tuition + (tuition * 0.05);
 		
-			if (year == 10) {
-				totalCostOfTenYears=tuition;
+			if (year <= 10) {
+				totalCostOfTenYears+=tuition;
 			}
 			
 			if(year>10) {
