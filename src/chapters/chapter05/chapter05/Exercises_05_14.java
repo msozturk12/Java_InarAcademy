@@ -24,7 +24,7 @@ public class Exercises_05_14 {
 		}
 
 		
-		while (n1 % gcd != 0 && n2 % gcd != 0) {
+		while (n1 % gcd != 0 || n2 % gcd != 0) {
 			gcd--;
 
 		}
