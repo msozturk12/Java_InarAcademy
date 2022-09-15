@@ -4,22 +4,24 @@ public class Asal {
 
 	public static void main(String[] args) {
 
-		boolean isPrime = true;
-		
+		int divisor = 2;
 		int number = 2;
-		int count=0;
 		
-		for(int i=1 ; i > 50 ; i +=2) {
-			if(i % number == 0 ) {
-				isPrime=false;
-			
-				
-			}else {
-				System.out.println(i);
-			
+		while (number <= 100) {
+
+			boolean isPrime = true;
+
+			for (divisor = 2; divisor <= number / 2; divisor++) {
+				if (number % divisor == 0) {
+					isPrime = false;
+					
+				}
+			}
+			if (isPrime) {
+				System.out.println(number);
+
 			}
 			number++;
 		}
 	}
-
 }

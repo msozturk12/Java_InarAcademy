@@ -10,7 +10,7 @@ public class decimalToHex {
 
 		Scanner input= new Scanner(System.in);
 		
-		System.out.println(" bir tam sayıyı giriniz. ");
+		System.out.println(" Bir tam sayıyı giriniz. ");
 		int tamSayı=input.nextInt();
 		
 		String hexSayı="";

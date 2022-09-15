@@ -21,8 +21,9 @@ public class Exercises_05_09 {
 
 		while (i < numberOfStudent) {
 
-			System.out.println("Enter the each student name : ");
-			String name = input.next();
+			input.nextLine();
+			System.out.println("Enter student name : ");
+			String name = input.nextLine();
 		
 			
 
