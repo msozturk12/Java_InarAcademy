@@ -4,6 +4,9 @@ public class Exercises_05_39 {
 
 	public static void main(String[] args) {
 
+		
+		
+		//NOT FINIHED YET
 		double baseSalary = 0;
 		double commission = 0;
 
