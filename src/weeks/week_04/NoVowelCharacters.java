@@ -1,6 +1,6 @@
 package weeks.week_04;
 
-public class VowelCharacters {
+public class NoVowelCharacters {
 
 	public static void main(String[] args) {
 
