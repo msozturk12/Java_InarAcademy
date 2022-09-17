@@ -38,7 +38,7 @@ public class Exercises_05_22 {
 			double principal = monthlyPayment - interest;
 			balance = balance - principal;
 			
-			System.out.printf("%d\t\t%.2f\t\t%6.2f\t\t%.2f \n" , pay, interest , principal , balance);
+			System.out.printf("%d\t\t%.2f\t\t%-6.2f\t\t%.2f \n" , pay, interest , principal , balance);
 			
 			
 		}

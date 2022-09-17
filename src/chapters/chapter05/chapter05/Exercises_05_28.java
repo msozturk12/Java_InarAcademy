@@ -7,9 +7,6 @@ public class Exercises_05_28 {
 	public static void main(String[] args) {
 		
 		
-		
-//		NOT FINISHED YET
-		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Enter the year ");
@@ -20,7 +17,8 @@ public class Exercises_05_28 {
 		
 		String result="";
 		
-		
+		boolean isLeapYear = ((year % 4 == 0 || year % 100 != 0) && (year % 400 == 0));
+				
 		for(int month = 1 ; month <= 12 ; month++) {
 			result=" ";
 			
@@ -39,7 +37,7 @@ public class Exercises_05_28 {
 			case 12 : result+= "December"; break;
 			
 			}
-			result += "1, " + year + " is " ;
+			result += " 1, " + year + " is " ;
 		
 			
 			
@@ -47,9 +45,37 @@ public class Exercises_05_28 {
 			
 			switch(firstDayOfTheYear) {
 			
-			case 0 : 
-			}
+			
+			case 0: System.out.println(result + "Sunday"); break;
+			case 1: System.out.println(result + "Monday"); break;
+			case 2: System.out.println(result + "Tuesday"); break;
+			case 3: System.out.println(result + "Wednesday"); break;
+			case 4: System.out.println(result + "Thursday"); break;
+			case 5: System.out.println(result + "Friday"); break;
+			case 6: System.out.println(result + "Saturday"); break;				
+		 }
+
+			
+			if ( month == 1 || month == 3  || month == 5 || month == 7 ||  month == 8 || month == 10 ||month == 12) {
+					firstDayOfTheYear += 31;
+			
+			}else if (month == 4 || month == 6 || month == 9 || month == 11) {
+					firstDayOfTheYear += 30;
+			
+			}else {
+					if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+						firstDayOfTheYear += 29;
+					
+					}else {
+						firstDayOfTheYear += 28;
+					}
+		
+		
 		}
+		
+	
+	
+	}
 		
 		
 		

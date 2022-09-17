@@ -6,7 +6,7 @@ public class Exercises_05_18D {
 
 		System.out.println("Pattern D");
 
-		for (int row = 0; row < 7 ; row++) {
+		for (int row = 0; row <=6 ; row++) {
 			for (int gap = 0 ; gap < row ; gap++) {
 				System.out.print("  ");
 			}
