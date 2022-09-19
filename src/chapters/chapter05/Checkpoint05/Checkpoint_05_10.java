@@ -11,7 +11,7 @@ public class Checkpoint_05_10 {
 		int number; 
 		int sum = 0; 
 		int count;
-		
+		System.out.println("Enter 5 number");
 		
 		for (count = 0; count < 5; count++) {
 			number = input.nextInt();

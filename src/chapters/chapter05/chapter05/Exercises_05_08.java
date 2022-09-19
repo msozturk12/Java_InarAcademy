@@ -5,30 +5,37 @@ import java.util.Scanner;
 public class Exercises_05_08 {
 
 	public static void main(String[] args) {
+		/**	enter the number of student
+		 *		 each students name and score---->tekrar eden unsur
+		 * student name who take highest score
+		 */
+
 		Scanner input = new Scanner(System.in);
-		String highestPointName="";
-		int highestPoint=0;
-		
-		System.out.println("Enter the number of student :");
-		int numberOfStudent=input.nextInt();
-	
-		int i = 0;
-		
-		while(i < numberOfStudent) {
-			
-			System.out.println("Enter the each student name : ");
+		System.out.println("Enter the number of student ");
+		int numberOfStudent = input.nextInt();
+
+
+		int maxScore=0;
+		String maxScoreName="";
+		int i =0;
+
+		while(i<numberOfStudent){
+			System.out.println("Enter the name of student ");
 			String name = input.next();
-			
-			System.out.println("Enter the score :");
+
+			System.out.println("Enter the score of " + name);
 			int score = input.nextInt();
-			i++;
-			
-			if(score>highestPoint) {
-				highestPoint=score;
-				highestPointName=name;
+
+
+			 if(score>maxScore){
+				maxScore=score;
+				maxScoreName=name;
 			}
+
+			i++;
 		}
-	System.out.println("Student who take highest score : " + highestPointName);
+		System.out.println("the name  of the student with the highest score is " + maxScoreName + " with the score of " + maxScore);
+
 	}
 
 }

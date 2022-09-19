@@ -7,7 +7,7 @@ public class Exercises_05_04 {
 		
 		System.out.println("Miles\tKilometers");
 		for(int m = 1; m<11 ;m++ ) {
-			System.out.printf("%2d \t %.3f\n",m,m*1.609);
+			System.out.printf("%-2d \t \t%.3f\n",m,m*1.609);
 			
 		}
 		

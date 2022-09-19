@@ -12,7 +12,7 @@ public class Exercises_05_50 {
 
 		int count = 0;
 
-		for (int i = 0; i < str.length(); i++) {							//Character.isUpperCase(str.charAt(i)	
+		for (int i = 0; i < str.length(); i++) {							//Character.isUpperCase(str.charAt(i))	
 
 			if ('A' <= str.charAt(i) && str.charAt(i)<='Z'){
 				

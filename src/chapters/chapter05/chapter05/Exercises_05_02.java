@@ -7,27 +7,28 @@ public class Exercises_05_02 {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		int count=0;
-		int correctCount=0;
-		long startTime=System.currentTimeMillis();
-		
-		while(count<10) {
-			int number1 = (int)(Math.random()* 15);
-			int number2 = (int)(Math.random()* 15);
-			
-			System.out.println(number1 + "+" + number2 + "=" + " ?" );
+		int correctCount = 0;
+		long start = System.currentTimeMillis();
+		int counter = 0;
+
+		while (counter < 10) {
+
+			int number1 = (int) (Math.random() * 15);
+			int number2 = (int) (Math.random() * 15);
+			int result = number1 + number2;
+			System.out.printf("What is the result of %d + %d =  ?", number1, number2);
 			int answer = input.nextInt();
-			
-			if(number1 + number2 == answer) {
+			if (answer == result) {
 				correctCount++;
 			}
-			count++;
-		}
-		long lastTime = System.currentTimeMillis();
-		System.out.println("Correct count is " + correctCount);
-		System.out.println("Your test time is " + (int)(lastTime - startTime)/1000);
-		
-	
-	}
 
+			counter++;
+
+		}
+		long finish = System.currentTimeMillis();
+		long totalTıme=finish-start;
+
+		System.out.println("Your correct count is " + correctCount);
+		System.out.println("The test time is " + (totalTıme / 1000) + "second");
+	}
 }

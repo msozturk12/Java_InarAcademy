@@ -8,7 +8,7 @@ public class Exercises_05_06 {
 		
 		for(int m = 1,k=20; m<11 && k<70; m++, k+=5) {
 			
-			System.out.printf("%d	%5.3f		| %d		%6.3f\n", m , m*1.609 , k , k/1.609); 
+			System.out.printf("%d	%9.3f		| %d		%10.3f\n", m , m*1.609 , k , k/1.609);
 			
 		}
 		

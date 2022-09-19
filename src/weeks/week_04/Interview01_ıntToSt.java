@@ -1,6 +1,6 @@
 package weeks.week_04;
 
-public class ınterview01_ıntToString {
+public class Interview01_ıntToSt {
 
 	public static void main(String[] args) {
 

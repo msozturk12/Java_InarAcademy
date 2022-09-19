@@ -5,41 +5,44 @@ import java.util.Scanner;
 public class Exercises_05_01 {
 
 	public static void main(String[] args) {
-
+		/**
+		 * sayılar girilecek 0 yazana dek
+		 * + counter
+		 * -counter
+		 * sum
+		 * average
+		 */
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter an integer,the input ends if it is 0 :");
-		int number = input.nextInt();
+		int positiveCount=0;
+		int negativeCount=0;
+		double sum=0;
+		double average=0;
+		int counter=0;
 
-		int count = 1;
-		int pozitifCount = 0;
-		int negatifCount = 0;
-		double sum = 0;
-		double avarage = 0;
-		int num = 0;
+		System.out.println("Enter an integer, the input ends if it is 0:");
+		int number= input.nextInt();
 
-		while (number != 0) {
-
-			System.out.println("Enter an integer,the input ends if it is 0 :");
-			number = input.nextInt();
-
-			if (number < 0) {
-				negatifCount++;
-
-			} else {
-				pozitifCount++;
-
-				sum += number;
-				avarage = sum / (pozitifCount + negatifCount);
-			}
-			count++;
+		if(number==0){
+			System.out.println("No numbers are entered except 0");
+			System.exit(1);
 		}
-		count++;
 
-		System.out.println("The number of positives is  " + pozitifCount);
-		System.out.println("The number of negative is  " + negatifCount);
+		while(number!=0){
+
+			if(number>0){
+				positiveCount++;
+			}else{
+				negativeCount++;
+			}
+			counter++;
+			sum+=number;
+			average=sum/counter;
+			number = input.nextInt();
+		}
+		System.out.println("The number of positives is " + positiveCount);
+		System.out.println("The number of negatives is " + negativeCount );
 		System.out.println("The total is " + sum);
-		System.out.println("The avarage is " + avarage);
-
+		System.out.println("The average is " + average);
 	}
 
 }
