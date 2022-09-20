@@ -7,13 +7,11 @@ public class Exercises_05_18A {
 		
 		System.out.println("Patern A");
 		
-		for (int satır = 1; satır <= 6; satır++) {
+		for(int row = 1 ; row<7 ; row++){
+			for(int colon = 1 ; colon<=row ; colon++){
+				System.out.print(colon + " ");
 
-			for (int sutun = 1; sutun <= satır; sutun++) {
-
-				System.out.print(sutun + " ");
 			}
-
 			System.out.println();
 		}
 

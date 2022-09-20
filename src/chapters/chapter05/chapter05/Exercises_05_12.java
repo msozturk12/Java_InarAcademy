@@ -9,7 +9,7 @@ public class Exercises_05_12 {
         /**
          * Find the smallest n such that n^2 > 12,000)
          * n^2 > 24
-         * n^2<24 ---> en büyük n=4  n dersem bulurum
+         * n^2<24 ---> en büyük n=4
          */
 
         Scanner input = new Scanner(System.in);
