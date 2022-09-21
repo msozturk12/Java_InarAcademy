@@ -31,14 +31,14 @@ public class Exercises_05_22 {
 		
 		System.out.println("\nPayment#\tInterest\tPrincipal\tBalance");
 		
-		for(int pay = 1 ; pay<numberOfYears * 12  ; pay++ ) {
+		for(int pay = 1 ; pay<=numberOfYears * 12  ; pay++ ) {
 			
 		
 			double interest = monthlyInterestRate * balance;
 			double principal = monthlyPayment - interest;
 			balance = balance - principal;
-			
-			System.out.printf("%d\t\t%.2f\t\t%-6.2f\t\t%.2f \n" , pay, interest , principal , balance);
+
+			System.out.printf("%-2d\t\t%9.2f\t\t%6.2f \t\t%7.2f\n",pay,interest,principal ,balance);
 			
 			
 		}

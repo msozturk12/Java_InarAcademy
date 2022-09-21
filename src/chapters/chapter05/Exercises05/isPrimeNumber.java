@@ -2,26 +2,37 @@ package chapters.chapter05.Exercises05;
 
 public class isPrimeNumber {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+/**
+ * per_line;count; divisor;for
+ * Asal sayıları bulma 1-50
+ * önce asal mı degil mi bul
+ *					-bolen olucak number bölünce 0 oluyorsa asal degil
+ *	count satır 10 a gelince aşagı geçsin
+ */
 
-		int asalSayacı = 0;
-		int sayı = 2;
+        final int PER_LINE = 10;
+        final int NUMBER_OF_PRIME=50;
+        int count = 0;
 
-		while (asalSayacı < 100) {				//100. asal sayı
-			boolean asalMı = true;
+        for (int number = 2; number < NUMBER_OF_PRIME; number++) {
+            boolean isPrime = true;
+            for (int divisor = 2; divisor <= number / 2; divisor++) {
 
-			for (int i = 2; i < sayı/2; i++) {
-				if (sayı % i == 0) {
-					asalMı = false;
-				}
-			}
-		if(asalMı == true) {
-			asalSayacı++;
-			System.out.println(asalSayacı + ". asal sayı:" + sayı );
-		}
-		sayı++;
-		
-		}
+                if (number % divisor == 0) {
+                    isPrime = false;
 
-	}
+                }
+            }
+            if (isPrime) {
+                count++;
+                if (count % PER_LINE == 0) {
+                    System.out.println(number);
+                } else {
+                    System.out.print(number + " ");
+                }
+            }
+        }
+
+    }
 }

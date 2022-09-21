@@ -3,27 +3,23 @@ package chapters.chapter05.chapter05;
 
 public class Exercises_05_23 {
 
-	public static void main(String[] args) {
-		
-		double sumLeftToRight = 0;
-		double sumRightToLeft = 0;
-		
-		
-		for (double n = 1; n <= 50_000; n++) {
+    public static void main(String[] args) {
 
-			sumLeftToRight += (1/ n);
-		}
-		
-		for(double n = 50_000 ; n > 0 ; n--) {
-			
-			sumRightToLeft += (1/n);
-			
-			
-		}
-	System.out.println("Result for Left to Right :" + sumLeftToRight );
-	System.out.println("Result for Right to Left  :" + sumRightToLeft );
-	
-	System.out.println("The differences between them : " + (sumRightToLeft - sumLeftToRight));
-	}
+        double sumLeftToRight = 0.0;
+        double sumRightToLeft = 0.0;
+
+        for (double n = 1; n <= 50000.0; n++) {
+            sumLeftToRight += (1 / n);
+
+        }
+        for (double n2 = 50000.0; n2 > 0; n2--) {
+            sumRightToLeft  += (1 / n2);
+
+        }
+
+        System.out.println("Left to right sum is= " + sumLeftToRight );
+        System.out.println("Right to left sum is= " + sumRightToLeft);
+        System.out.println("The differences between them : " +(sumLeftToRight-sumRightToLeft));
+    }
 
 }
