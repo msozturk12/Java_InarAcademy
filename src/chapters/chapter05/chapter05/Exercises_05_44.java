@@ -13,7 +13,7 @@ public class Exercises_05_44 {
 
 		String bitValue = " ";
 
-		for (int i = 1; i < 16; i++) {
+		for (int i = 0; i < 16; i++) {
 
 			bitValue = (number & 1) + bitValue;
 			number >>= 1;

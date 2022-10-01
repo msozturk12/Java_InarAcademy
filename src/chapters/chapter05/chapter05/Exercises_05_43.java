@@ -10,7 +10,7 @@ public class Exercises_05_43 {
 			for(int n2 = n1+1 ; n2<=7 ; n2++) {
 				
 				count++;
-				System.out.println( " " +n1 + n2);
+				System.out.println(n1 + " " + n2);
 				
 			}
 		}
