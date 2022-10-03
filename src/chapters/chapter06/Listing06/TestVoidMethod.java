@@ -10,7 +10,7 @@ public class TestVoidMethod {
 
 
     static void metod(int derinliksayacı) {
-        if(derinliksayacı==1000){
+        if(derinliksayacı==10){
             return;
         }
         derinliksayacı++;
