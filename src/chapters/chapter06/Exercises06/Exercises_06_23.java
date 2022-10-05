@@ -20,7 +20,7 @@ public class Exercises_06_23 {
 
         System.out.println("Enter a character that you want to learn occurrences ");
         char ch = input.nextLine().charAt(0); // ı searched it  in ınternet.
-22
+
 
 
         int result = count(str, ch);

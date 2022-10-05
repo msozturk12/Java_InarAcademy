@@ -8,7 +8,7 @@ public class Exercises_06_22 {
     public static void main(String[] args) {
         /*
         Babylonian method.
-
+        ??
          */
 
         Scanner input = new Scanner(System.in);
