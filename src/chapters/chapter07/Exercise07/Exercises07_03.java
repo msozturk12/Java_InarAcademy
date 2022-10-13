@@ -12,21 +12,18 @@ public class Exercises07_03 {
         tekrarları say -->count(numbers)
 
 
-
-
-                (Count occurrence of numbers) Write a program that reads the integers between 1
-        and 100 and counts the occurrences of each. Assume the input ends with 0. Here
-        is a sample run of the program:
-
          */
 
         int[] numbers = new int[100];
         System.out.println("Enter the ınteger between 1 and 100 :");
-
         count(numbers);
+        displayOccurrence(numbers);
 
+    }
+
+    public static void displayOccurrence(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] > 0) {
+            if (numbers[i] > 1) {
                 System.out.printf("%d occurs %d times\n", i + 1, numbers[i]);
             }
             if(numbers[i]==1){
@@ -34,7 +31,6 @@ public class Exercises07_03 {
             }
 
         }
-
     }
 
 
