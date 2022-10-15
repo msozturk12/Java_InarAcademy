@@ -14,36 +14,36 @@ public class Exercises07_03 {
 
          */
 
-        int[] numbers = new int[100];
+        int[] occurrence = new int[100];
         System.out.println("Enter the ınteger between 1 and 100 :");
-        count(numbers);
-        displayOccurrence(numbers);
+        count(occurrence);
+        displayOccurrence(occurrence);
 
     }
 
-    public static void displayOccurrence(int[] numbers) {
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] > 1) {
-                System.out.printf("%d occurs %d times\n", i + 1, numbers[i]);
+    public static void displayOccurrence(int[] occurrence) {
+        for (int i = 0; i < occurrence.length; i++) {
+            if (occurrence[i] > 1) {
+                System.out.printf("%d occurs %d times\n", i + 1, occurrence[i]);
             }
-            if(numbers[i]==1){
-                System.out.printf("%d occurs %d time\n", i + 1, numbers[i]);
+            if(occurrence[i]==1){
+                System.out.printf("%d occurs %d time\n", i + 1, occurrence[i]);
             }
 
         }
     }
 
 
-    public static void count(int[] numbers) {
+    public static void count(int[] occurrence) {
         Scanner input = new Scanner(System.in);
-        int sayı;
+        int num;
         do {
-            sayı = input.nextInt();
-            if (1 <= sayı && sayı <= 100) {
-                numbers[sayı - 1]++;
+            num = input.nextInt();
+            if (1 <= num && num <= 100) {
+                occurrence[num - 1]++;
             }
 
-        } while (sayı != 0);
+        } while (num != 0);
 
     }
 }
