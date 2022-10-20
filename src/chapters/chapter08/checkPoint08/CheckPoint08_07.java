@@ -1,6 +1,6 @@
 package chapters.chapter08.checkPoint08;
 
-public class CheckPoints08_07 {
+public class CheckPoint08_07 {
     public static void main(String[] args) {
         int[][] array = {{1, 2, 3, 4}, {5, 6, 7, 8}};
         System.out.println(m1(array)[0]);
