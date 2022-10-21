@@ -33,13 +33,11 @@ public class Exercises08_04 {
                     max = arr[j];
                     maxIndex = j;
                 }
-
             }
             System.out.printf("Workers %d's work hour is %d\n",maxIndex,max);
             arr[maxIndex]=Integer.MIN_VALUE;
         }
     }
-
     public static void sumOfWeeklyHours(int[][] list, int[] sumHoursOfEmployee) {
         for (int i = 0; i < list.length; i++) {
             int sum = 0;
