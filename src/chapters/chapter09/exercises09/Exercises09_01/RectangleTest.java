@@ -1,6 +1,4 @@
-package chapters.chapter09.exercises09.E9_1;
-
-import chapters.chapter09.exercises09.E9_1.Rectangle;
+package chapters.chapter09.exercises09.Exercises09_01;
 
 public class RectangleTest {
 

@@ -1,4 +1,4 @@
-package chapters.chapter09.exercises09.E9_2;
+package chapters.chapter09.exercises09.Exercises09_02;
 
 public class Stock {
     String symbol;

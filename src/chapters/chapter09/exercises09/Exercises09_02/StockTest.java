@@ -1,6 +1,4 @@
-package chapters.chapter09.exercises09.E9_2;
-
-import chapters.chapter09.exercises09.E9_2.Stock;
+package chapters.chapter09.exercises09.Exercises09_02;
 
 public class StockTest {
     public static void main(String[] args) {

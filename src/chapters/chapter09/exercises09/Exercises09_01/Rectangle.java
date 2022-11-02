@@ -1,4 +1,4 @@
-package chapters.chapter09.exercises09.E9_1;
+package chapters.chapter09.exercises09.Exercises09_01;
 
 public class Rectangle {
     private double width;
