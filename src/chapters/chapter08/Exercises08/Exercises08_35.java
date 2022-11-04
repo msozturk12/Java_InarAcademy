@@ -4,12 +4,7 @@ import java.util.Scanner;
 
 public class Exercises08_35 {
     public static void main(String[] args) {
-        /*
-        -get matrix from user
-        -fillMatrix
-        NOT FINISHED
-        -
-         */
+
         int[][] matrix = getMatrixFromUsers();
         int[] largestBlock = findLargestBlock(matrix);
 
