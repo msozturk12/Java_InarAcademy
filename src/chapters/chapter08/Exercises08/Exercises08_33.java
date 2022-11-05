@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercises08_33 {
     public static void main(String[] args) {
         /*
-        NOT FINISHED YET
+
                 (Geometry: polygon subareas) A convex 4-vertex polygon is divided into four
         triangles, as shown in Figure 8.9.
         Write a program that prompts the user to enter the coordinates of four vertices and
