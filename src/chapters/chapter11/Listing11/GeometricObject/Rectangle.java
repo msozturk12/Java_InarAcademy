@@ -1,4 +1,4 @@
-package chapters.chapter11.Listing11.OverRiding;
+package chapters.chapter11.Listing11;
 
 public class Rectangle extends GeometricObject {
 
