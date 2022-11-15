@@ -1,4 +1,4 @@
-package chapters.chapter11.Listing11;
+package chapters.chapter11.Listing11.GeometricObject;
 
 public class Rectangle extends GeometricObject {
 

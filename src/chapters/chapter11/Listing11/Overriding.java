@@ -1,4 +1,4 @@
-package chapters.chapter11.Listing11.OverRiding;
+package chapters.chapter11.Listing11;
 
 public class Overriding {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ class B {
 
 class A extends B {
     // This method overrides the method in B
-   @Override
+    @Override
     public void p(double i) {
         System.out.println(i);
     }

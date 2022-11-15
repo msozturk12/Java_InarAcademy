@@ -1,4 +1,4 @@
-package chapters.chapter11.Listing11;
+package chapters.chapter11.Listing11.GeometricObject;
 
 public class Circle extends GeometricObject {
 
@@ -46,7 +46,7 @@ public class Circle extends GeometricObject {
 
     public void printCircle() {
         super.toString();
-        System.out.println("The circle is created " + getDateCreated() +
+        System.out.println("The circle is created " + super.getDateCreated() +
                 " and the radius is " + radius);
     }
 
