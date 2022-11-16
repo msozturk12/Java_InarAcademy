@@ -11,7 +11,7 @@ public class CheckPoint11_29b {
 class Circle{
     double radius;
 
-    public boolean equals(Object o) {
-        return this.radius == ((Circle)o).radius;
+    public boolean equals(Object circle) {
+        return this.radius == ((Circle)circle).radius;
     }
 }//TRUE
