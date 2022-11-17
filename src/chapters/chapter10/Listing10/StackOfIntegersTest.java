@@ -15,8 +15,7 @@ public class StackOfIntegersTest {
             System.out.println(stack.pop());
 
         }
-        System.out.println("Element peek is :" +
-                "\nSıze of elements " + stack.getSize());
+
 
     }
 }

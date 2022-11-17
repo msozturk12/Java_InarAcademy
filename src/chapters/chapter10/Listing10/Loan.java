@@ -62,4 +62,14 @@ public class Loan {
         System.out.printf("The loan was created on %s\n" + "The monthly payment is %.2f\nThe total payment is %.2f\n", this.loanDate.toString()
                 , getMonthlyPayment(), getTotalPayment());
     }
+
+    @Override
+    public String toString() {
+        return "Loan Class{" +
+                "\nannualInterestRate=" + annualInterestRate +
+                "\nnumberOfYear=" + numberOfYear +
+                "\nloanAmount=" + loanAmount +
+                "\nloanDate=" + loanDate +
+                '}';
+    }
 }
