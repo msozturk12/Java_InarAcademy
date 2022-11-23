@@ -1,17 +1,17 @@
-package chapters.chapter12.Listing12.CircleWithEx;
+package chapters.chapter12.Listing12.Listing_12_10InvalidRadiusException;
 
-public class CircleWithException {
+public class CircleWithCustomException {
     private double radius;
 
     private static int numberOfObject = 0;
 
 
-    public CircleWithException() {
+    public CircleWithCustomException() throws InvalidRadiusException {
         this(1.0);
 
     }
 
-    public CircleWithException(double radius) {
+    public CircleWithCustomException(double radius) throws InvalidRadiusException {
         setRadius(radius);
         numberOfObject++;
 
@@ -21,11 +21,11 @@ public class CircleWithException {
         return radius;
     }
 
-    public void setRadius(double radius) throws IllegalArgumentException {
+    public void setRadius(double radius) throws InvalidRadiusException {
         if (radius >= 0) {
             this.radius = radius;
         } else {
-            throw new IllegalArgumentException("Radius can not be negative");
+            throw new InvalidRadiusException(radius);
         }
 
 
@@ -39,17 +39,3 @@ public class CircleWithException {
         return radius * radius * Math.PI;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

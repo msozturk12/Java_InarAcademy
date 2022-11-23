@@ -14,10 +14,10 @@ public class CheckPoints12_5 {
     }
 }
 /*
-while value is 30 output is-->
+while value is 30, output is-->
             value is too small
             Continue after the catch block
 
-while value is 50 output is-->
+while value is 50 ,output is-->
             Continue after the catch block
  */

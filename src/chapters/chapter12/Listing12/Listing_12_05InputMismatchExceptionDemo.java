@@ -3,7 +3,7 @@ package chapters.chapter12.Listing12;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class InputMismatchExceptionDemo {
+public class Listing_12_05InputMismatchExceptionDemo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean continueInput = true;

@@ -2,7 +2,7 @@ package chapters.chapter12.Listing12;
 
 import java.util.Scanner;
 
-public class Quotient {
+public class Listing_12_01Quotient {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter two integer");

@@ -9,8 +9,8 @@ public class Checkpoints12_9_10_11_12 {
     /*
    CheckPoints12_9-->
    -The purpose of declaring exceptions is to tell the Java runtime system what can go wrong.
-   -we can declare an exception with using throws keyword
-   -yes,we can declare multiply exceptions in a method header with using ,
+   -we can declare an exception with using "throws" keyword
+   -yes,we can declare multiply exceptions in a method header with using " , "(comma)
 
    CheckPoints12_10-->
             Checked exceptions:

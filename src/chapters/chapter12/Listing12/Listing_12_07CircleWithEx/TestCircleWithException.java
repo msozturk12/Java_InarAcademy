@@ -1,4 +1,4 @@
-package chapters.chapter12.Listing12.CircleWithEx;
+package chapters.chapter12.Listing12.Listing_12_07CircleWithEx;
 
 public class TestCircleWithException {
     public static void main(String[] args) {

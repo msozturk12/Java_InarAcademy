@@ -3,7 +3,7 @@ package chapters.chapter12.Listing12;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class QuotientWithException {
+public class Listing_12_04QuotientWithException {
 
     public static void main(String[] args) {
 
