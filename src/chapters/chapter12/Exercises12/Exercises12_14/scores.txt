@@ -1,0 +1,3 @@
+haluk:90
+josi:80
+mary:10
