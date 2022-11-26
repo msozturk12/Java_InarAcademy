@@ -4,11 +4,11 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Exercises12_11 {
+public class E12_11 {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
-            System.out.println("Usage: java Exercise12_11 filename word");
+            System.out.println("Usage: java Exercise12_11 word filename ");
             System.exit(0);
 
         }
