@@ -48,10 +48,10 @@ public class Rectangle extends GeometricObject {
     @Override
     public String toString() {
         return "Rectangle:" +
-                "width=" + width +
-                "\nheight=" + height +
-                "\nArea of rectangle is " + getArea() +
-                "\nPerimeter of rectangle is " + getPerimeter();
+                "  width=" + width +
+                "  height=" + height +
+                "  Area of rectangle is " + getArea() +
+                "  Perimeter of rectangle is " + getPerimeter();
 
     }
 }
