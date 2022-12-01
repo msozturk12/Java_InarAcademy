@@ -2,7 +2,7 @@ package chapters.chapter13.Listing13.L13_01GeoObject;
 
 import chapters.chapter09.Listing09.Date;
 
-public abstract class GeometricObject {
+public abstract class GeometricObject implements Cloneable{
     private String color = "white";
     private boolean filled;
     private Date dateCreated;

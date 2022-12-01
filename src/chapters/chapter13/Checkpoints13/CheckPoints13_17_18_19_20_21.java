@@ -1,16 +1,8 @@
 package chapters.chapter13.Checkpoints13;
 
 public class CheckPoints13_17_18_19_20_21 {
-    public static void main(String[] args) {
-        Person[] persons = {new Person(3), new Person(4), new Person(1)};
-        java.util.Arrays.sort(persons);
-    }
-}
-class Person {
-    private int id;
-    Person(int id) {
-        this.id = id;
-    }
+
+
     /*
     CheckPoints13_17-->
         True or false? If a class implements Comparable, the object of the class can invoke
