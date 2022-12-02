@@ -1,16 +1,16 @@
-package chapters.chapter13.Listing13.L13_01GeoObject;
+package chapters.chapter13.Exercises13.Exercises13_05;
 
-public class Circle extends GeometricObject {
+public class Circle1 extends GeometricObject {
     private double radius;
 
-    protected Circle() {
+    protected Circle1() {
     }
 
-    protected Circle(double radius) {
+    protected Circle1(double radius) {
         this.radius = radius;
     }
 
-    protected Circle(String color, boolean filled, double radius) {
+    protected Circle1(String color, boolean filled, double radius) {
         super(color, filled);
         this.radius = radius;
     }
@@ -35,10 +35,13 @@ public class Circle extends GeometricObject {
 
     @Override
     public String toString() {
-        return "Circle1 :" +
-                "radius=" + radius +
+        return "\nCircle:" +
+                "\nradius=" + radius +
                 "\nArea of circle :" + getArea()+
-                "\nPerimeter of circle :" + getPerimeter();
+                "\nPerimeter of circle :" + getPerimeter()+
+                "\nColor of circle: " + getColor()+
+                "\nIs the circle filled:" + isFilled();
+
 
     }
 }

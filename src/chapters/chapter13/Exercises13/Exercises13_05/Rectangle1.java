@@ -1,19 +1,21 @@
-package chapters.chapter13.Listing13.L13_01GeoObject;
+package chapters.chapter13.Exercises13.Exercises13_05;
 
-public class Rectangle extends GeometricObject {
+
+
+public class Rectangle1 extends GeometricObject {
 
     private double width;
     private double height;
 
-    public Rectangle() {
+    public Rectangle1() {
     }
 
-    public Rectangle(double width, double height) {
+    public Rectangle1(double width, double height) {
         this.width = width;
         this.height = height;
     }
 
-    public Rectangle(String color, boolean filled, double width, double height) {
+    public Rectangle1(String color, boolean filled, double width, double height) {
         super(color, filled);
         this.width = width;
         this.height = height;
@@ -47,11 +49,11 @@ public class Rectangle extends GeometricObject {
 
     @Override
     public String toString() {
-        return "Rectangle1:" +
-                "  width=" + width +
-                "  height=" + height +
-                "  Area of rectangle is " + getArea() +
-                "  Perimeter of rectangle is " + getPerimeter();
+        return "\nRectangle:" +
+                "\nwidth=" + width +
+                "\nheight=" + height +
+                "\nArea of rectangle is " + getArea() +
+                "\nPerimeter of rectangle is " + getPerimeter();
 
     }
 }

@@ -42,7 +42,7 @@ public class CheckPoints13_22_23_24_25_26 {
       CheckPoints13_26-->
          public class Test {
                 public static void main(String[] args) {
-                     GeometricObject x = new Circle(3);
+                     GeometricObject x = new Circle1(3);
                      GeometricObject y = x.clone();
                      System.out.println(x == y);
                 }

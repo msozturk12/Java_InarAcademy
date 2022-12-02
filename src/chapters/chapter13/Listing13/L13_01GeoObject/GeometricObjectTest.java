@@ -12,9 +12,9 @@ public class GeometricObjectTest {
 
         System.out.println("----------------------");
 
-        System.out.print("Circle :");displayGeoObj(o1);
+        System.out.print("Circle1 :");displayGeoObj(o1);
         System.out.println();
-        System.out.print("Rectangle :");displayGeoObj(o2);
+        System.out.print("Rectangle1 :");displayGeoObj(o2);
     }
 
     private static Object equalsArea(GeometricObject o1, GeometricObject o2) {
