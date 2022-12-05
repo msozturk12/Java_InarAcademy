@@ -1,15 +1,15 @@
 package chapters.chapter13.Listing13;
 
-public class Rational extends Number implements Comparable<Rational> {
+public class Rational13_14 extends Number implements Comparable<Rational13_14> {
 
     private long numerator = 0;
     private long denominator = 1;
 
-    public Rational() {
+    public Rational13_14() {
         this(0, 1);
     }
 
-    public Rational(long numerator, long denominator) {
+    public Rational13_14(long numerator, long denominator) {
         long gcd = gcd(numerator, denominator);
         this.numerator = ((denominator > 0) ? 1 : -1) * numerator / gcd;
         this.denominator = Math.abs(denominator) / gcd;
@@ -38,28 +38,28 @@ public class Rational extends Number implements Comparable<Rational> {
         return denominator;
     }
 
-    public Rational add(Rational secondRational) {
+    public Rational13_14 add(Rational13_14 secondRational) {
         long n = numerator * secondRational.getDenominator() + denominator * secondRational.getNumerator();
         long d = denominator * secondRational.getDenominator();
-        return new Rational(n, d);
+        return new Rational13_14(n, d);
     }
 
-    public Rational subtract(Rational secondRational) {
+    public Rational13_14 subtract(Rational13_14 secondRational) {
         long n = numerator * secondRational.getDenominator() - denominator * secondRational.getNumerator();
         long d = denominator * secondRational.getDenominator();
-        return new Rational(n, d);
+        return new Rational13_14(n, d);
     }
 
-    public Rational multiply(Rational secondRational) {
+    public Rational13_14 multiply(Rational13_14 secondRational) {
         long n = numerator * secondRational.getNumerator();
         long d = denominator * secondRational.getDenominator();
-        return new Rational(n, d);
+        return new Rational13_14(n, d);
     }
 
-    public Rational divide(Rational secondRational) {
+    public Rational13_14 divide(Rational13_14 secondRational) {
         long n = numerator * secondRational.getDenominator();
         long d = denominator * secondRational.getNumerator();
-        return new Rational(n, d);
+        return new Rational13_14(n, d);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class Rational extends Number implements Comparable<Rational> {
     }
 
     public boolean equals(Object other) {
-        return (this.subtract((Rational) other)).getNumerator() == 0;
+        return (this.subtract((Rational13_14) other)).getNumerator() == 0;
     }
 
     @Override
@@ -97,7 +97,7 @@ public class Rational extends Number implements Comparable<Rational> {
     }
 
     @Override
-    public int compareTo(Rational o) {
+    public int compareTo(Rational13_14 o) {
         if (this.subtract(o).getNumerator() > 0) {
             return 1;
         } else if (this.subtract(o).getNumerator() < 0) {

@@ -13,7 +13,7 @@ public class Rational13_15 extends Number implements Comparable<Rational13_15> {
 
     public Rational13_15(BigInteger numerator, BigInteger denominator) {
         BigInteger gcd = gcd(numerator, denominator);
-        r[0] = (denominator.compareTo(BigInteger.ZERO) > 0 ? BigInteger.ONE : new BigInteger("-1"));
+        r[0] = (denominator.compareTo(BigInteger.ZERO) > 0 ? BigInteger.ONE : new BigInteger("-1")).multiply(numerator.divide(gcd));
         r[1] = denominator.divide(gcd);
     }
 
