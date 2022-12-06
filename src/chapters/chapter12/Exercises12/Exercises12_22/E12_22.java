@@ -24,16 +24,20 @@ public class E12_22 {
         }
 
         ArrayList<File> directories = new ArrayList<>();
+
         directories.add(directory);
+        String oldString = args[1];
+        String newString = args[2];
         while (!directories.isEmpty()) {
             File fileFromDir = directories.remove(0);
+
             if (fileFromDir.isDirectory()) {
                 File[] files = fileFromDir.listFiles();
                 for (int i = 0; i < files.length; i++) {
                     if (files[i].isDirectory()) {
                         directories.add(files[i]);
                     } else {
-                        replaceOldStrWithNew(files[i], args[1], args[2]);
+                        replaceOldStrWithNew(files[i], oldString, newString);
                     }
 
                 }
@@ -42,19 +46,19 @@ public class E12_22 {
     }
 
     private static void replaceOldStrWithNew(File file, String oldString, String newString) throws IOException {
-        String result = "";
+        String str = "";
+        StringBuilder sb = new StringBuilder();
         try (Scanner input = new Scanner(file);) {
             while (input.hasNext()) {
-                String s = input.nextLine();
-                s = s.replaceAll(oldString, newString);
-                result += s + "\n";
+                str= input.nextLine();
+                sb.append(str.replace(oldString,newString) + "\n");
             }
 
 
         }
 
         try (PrintWriter output = new PrintWriter(file)) {
-            output.println(result);
+            output.println(sb);
         }
     }
 }
